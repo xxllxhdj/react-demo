@@ -4,6 +4,7 @@ import Welcome from './components/welcome';
 import Clock from './components/clock';
 import Count from './components/count';
 import List from './components/list';
+import NameForm from './components/nameForm';
 
 export class App extends Component {
     render() {
@@ -13,6 +14,7 @@ export class App extends Component {
                 <Clock/>
                 <Count/>
                 <List/>
+                <NameForm/>
             </div>
         );
     }
