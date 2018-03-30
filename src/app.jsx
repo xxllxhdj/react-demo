@@ -18,7 +18,7 @@ export class App extends Component {
                 <List />
                 <NameForm />
                 <Calculator />
-                <Dialog title="Mars Exploration Program" message="How should we refer to you?">
+                <Dialog message="How should we refer to you?">
                     <h1>do something</h1>
                 </Dialog>
             </div>

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 function FancyBorder(props) {
     return (
@@ -9,6 +10,14 @@ function FancyBorder(props) {
 }
 
 class Dialog extends Component {
+    static propTypes = {
+        title: PropTypes.string,
+        message: PropTypes.string,
+        children: PropTypes.element
+    };
+    static defaultProps = {
+        title: 'Dialog'
+    };
     render() {
         return (
             <FancyBorder color="blue">
@@ -23,5 +32,11 @@ class Dialog extends Component {
         );
     }
 };
+
+// Dialog.propTypes = {
+//     title: PropTypes.string,
+//     message: PropTypes.string,
+//     children: PropTypes.element
+// };
 
 export default Dialog;
