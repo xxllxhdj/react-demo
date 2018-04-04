@@ -7,6 +7,7 @@ import List from './components/list';
 import NameForm from './components/nameForm';
 import Calculator from './components/calculator';
 import Dialog from './components/dialog';
+import TestModal from './components/testModal';
 
 export class App extends Component {
     render() {
@@ -21,6 +22,7 @@ export class App extends Component {
                 <Dialog message="How should we refer to you?">
                     <h1>do something</h1>
                 </Dialog>
+                <TestModal />
             </div>
         );
     }
