@@ -1,8 +1,6 @@
 import { Component } from 'react';
 import ReactDOM from 'react-dom';
 
-const modalRoot = document.getElementById('modal-root');
-
 class Modal extends Component {
     constructor(props) {
         super(props);
@@ -11,11 +9,15 @@ class Modal extends Component {
     };
 
     componentDidMount() {
-        modalRoot.appendChild(this.el);
+        this.modalRoot = document.createElement('div');
+        this.modalRoot.className = 'modal-root';
+        this.modalRoot.appendChild(this.el);
+        document.body.appendChild(this.modalRoot);
     }
 
     componentWillUnmount() {
-        modalRoot.removeChild(this.el);
+        this.modalRoot.removeChild(this.el);
+        document.body.removeChild(this.modalRoot);
     }
 
     render() {

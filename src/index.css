@@ -4,7 +4,7 @@ body {
     font-family: sans-serif;
 }
 
-#modal-root {
+.modal-root {
     position: relative;
     z-index: 999;
 }
