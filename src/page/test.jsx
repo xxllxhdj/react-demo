@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 
 import Welcome from "../components/welcome";
 import Clock from "../components/clock";
@@ -12,7 +12,7 @@ import TestModal from "../components/testModal";
 class Test extends Component {
     render() {
         return (
-            <div>
+            <Fragment>
                 <Welcome name="world" />
                 <Clock />
                 <Count />
@@ -23,7 +23,7 @@ class Test extends Component {
                     <h1>do something</h1>
                 </Dialog>
                 <TestModal />
-            </div>
+            </Fragment>
         );
     }
 }
