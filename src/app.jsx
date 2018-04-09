@@ -1,8 +1,11 @@
 import React, { Component, Fragment } from "react";
 import { Switch, Route } from "react-router-dom";
 
+import asyncComponent from './utils/asyncComponent';
+
 import Home from './page/home';
-import Test from './page/test';
+
+const Test = asyncComponent(() => import('./page/test'));
 
 export class App extends Component {
     render() {
