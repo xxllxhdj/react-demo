@@ -22,13 +22,13 @@ export class Home extends Component {
                 </div>
                 <h3>Essential Links</h3>
                 <ul>
-                    <li><a href="http://www.css88.com/react/" target="_blank">Core Docs</a></li>
+                    <li><a href="http://www.css88.com/react/" rel="noopener noreferrer" target="_blank">Core Docs</a></li>
                 </ul>
                 <h3>Ecosystem</h3>
                 <ul>
-                    <li><a href="http://reacttraining.cn/" target="_blank">react-router</a></li>
-                    <li><a href="https://github.com/facebook/react-devtools" target="_blank">react-devtools</a></li>
-                    <li><a href="https://github.com/enaqx/awesome-react" target="_blank">awesome-react</a></li>
+                    <li><a href="http://reacttraining.cn/" rel="noopener noreferrer" target="_blank">react-router</a></li>
+                    <li><a href="https://github.com/facebook/react-devtools" rel="noopener noreferrer" target="_blank">react-devtools</a></li>
+                    <li><a href="https://github.com/enaqx/awesome-react" rel="noopener noreferrer" target="_blank">awesome-react</a></li>
                 </ul>
             </div>
         );
