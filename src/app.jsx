@@ -1,14 +1,17 @@
 import React, { Component, Fragment } from "react";
+import { Switch, Route } from "react-router-dom";
 
-import Header from './page/header';
-import Main from './page/main';
+import Home from './page/home';
+import Test from './page/test';
 
 export class App extends Component {
     render() {
         return (
             <Fragment>
-                <Header />
-                <Main />
+                <Switch>
+                    <Route exact path="/" component={Home} />
+                    <Route path="/test" component={Test} />
+                </Switch>
             </Fragment>
         );
     }
