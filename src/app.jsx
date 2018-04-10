@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from "react";
+import React, { Component } from "react";
 import { Switch, Route } from "react-router-dom";
 
 import { createStore } from 'redux';
@@ -17,12 +17,10 @@ export class App extends Component {
     render() {
         return (
             <Provider store={store}>
-                <Fragment>
-                    <Switch>
-                        <Route exact path="/" component={Home} />
-                        <Route path="/test" component={Test} />
-                    </Switch>
-                </Fragment>
+                <Switch>
+                    <Route exact path="/" component={Home} />
+                    <Route path="/test" component={Test} />
+                </Switch>
             </Provider>
         );
     }
