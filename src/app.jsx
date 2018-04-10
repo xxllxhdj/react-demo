@@ -10,6 +10,7 @@ import asyncComponent from './utils/asyncComponent';
 import Home from './page/home';
 
 const Test = asyncComponent(() => import('./page/test'));
+const Todox = asyncComponent(() => import('./page/todox'));
 
 const store = createStore(rootReducer);
 
@@ -20,6 +21,7 @@ export class App extends Component {
                 <Switch>
                     <Route exact path="/" component={Home} />
                     <Route path="/test" component={Test} />
+                    <Route path="/todox" component={Todox} />
                 </Switch>
             </Provider>
         );

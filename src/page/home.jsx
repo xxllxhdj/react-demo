@@ -17,9 +17,10 @@ export class Home extends Component {
                     To get started, edit <code>src/App.js</code> and save to reload.
                 </p>
                 <h3>Framework</h3>
-                <div>
-                    <Link to="/test">Test</Link>
-                </div>
+                <ul>
+                    <li><Link to="/test">Test</Link></li>
+                    <li><Link to="/todox">Todox</Link></li>
+                </ul>
                 <h3>Essential Links</h3>
                 <ul>
                     <li><a href="http://www.css88.com/react/" rel="noopener noreferrer" target="_blank">Core Docs</a></li>
