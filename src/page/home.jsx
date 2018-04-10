@@ -29,6 +29,7 @@ export class Home extends Component {
                 <ul>
                     <li><a href="http://reacttraining.cn/" rel="noopener noreferrer" target="_blank">react-router</a></li>
                     <li><a href="http://www.redux.org.cn/" rel="noopener noreferrer" target="_blank">redux</a></li>
+                    <li><a href="http://facebook.github.io/immutable-js/docs/#/" rel="noopener noreferrer" target="_blank">immutable</a></li>
                     <li><a href="https://github.com/facebook/react-devtools" rel="noopener noreferrer" target="_blank">react-devtools</a></li>
                     <li><a href="https://github.com/enaqx/awesome-react" rel="noopener noreferrer" target="_blank">awesome-react</a></li>
                 </ul>
