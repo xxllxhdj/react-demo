@@ -8,6 +8,20 @@ export const addTodo = text => ({
     text
 });
 
+function getTodo(text) {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve(text);
+        }, 100);
+    });
+}
+
+export const fetchTodo = text => {
+    return dispatch => {
+        return getTodo(text).then(t => dispatch(addTodo(t)));
+    };
+};
+
 export const setVisibilityFilter = filter => ({
     type: proType.SET_VISIBILITY_FILTER,
     filter
